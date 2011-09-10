@@ -1,4 +1,10 @@
 Courier::Application.routes.draw do
+  get "parcel/ship"
+
+  get "parcel/recieve"
+  get "parcel/package"
+  post "parcel/package"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

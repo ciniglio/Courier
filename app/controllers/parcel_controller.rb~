@@ -1,0 +1,8 @@
+class ParcelController < ApplicationController
+  def send
+  end
+
+  def recieve
+  end
+
+end
