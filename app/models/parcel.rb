@@ -5,6 +5,6 @@ class Parcel < ActiveRecord::Base
 
   validates_uniqueness_of :tracker
   def create_tracker
-    self.tracker = Digest::SHA1.hexdigest(self.original_filename + DateTime.now.to_f.to_s)
+    self.tracker = Digest::SHA256.hexdigest(self.original_filename + DateTime.now.to_f.to_s)
   end
 end
