@@ -31,3 +31,7 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+# Facebook Authentication
+gem 'devise'
+gem 'omniauth'

@@ -1,5 +1,10 @@
-<%= form_tag({}, :multipart => true) do %>
-  <%= label_tag(:parcel, "File to upload") %>
-  <%= file_field_tag "parcel" %>
-  <%= submit_tag "Upload" %>
+<% if user_signed_in? %>
+  Signed in as <%= current_user.email %>.
+  <%= form_tag({}, :multipart => true) do %>
+    <%= label_tag(:parcel, "File to upload") %>
+    <%= file_field_tag "parcel" %>
+    <%= submit_tag "Upload" %>
+  <% end %>
+<% else %>
+  <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
 <% end %>
