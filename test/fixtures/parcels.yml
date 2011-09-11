@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tracker: MyText
+  original_filename: MyText
+  location: MyText
+
+two:
+  tracker: MyText
+  original_filename: MyText
+  location: MyText
