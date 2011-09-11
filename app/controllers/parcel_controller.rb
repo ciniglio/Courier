@@ -14,6 +14,13 @@ class ParcelController < ApplicationController
   end
 
   def ship
+    parcel = Parcel.where(:tracker => params[:tracker]).first
+    unless parcel.blank?
+      send_file(Rails.root.join('public', 'uploads', parcel.tracker), :filename => parcel.original_filename)
+      @message = parcel.original_filename
+    else
+      @message = "none"
+    end
   end
 
   def recieve
