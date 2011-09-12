@@ -68,6 +68,7 @@ GEM
     multi_xml (0.2.2)
     multipart-post (1.1.3)
     net-ldap (0.2.2)
+    nokogiri (1.4.7)
     nokogiri (1.4.7-x86-mingw32)
     oa-basic (0.2.6)
       oa-core (= 0.2.6)

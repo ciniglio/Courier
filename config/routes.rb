@@ -7,7 +7,7 @@ Courier::Application.routes.draw do
   get "parcel/package"
   post "parcel/package"
 
-  match ":tracker" => "parcel#ship"
+  match ":tracker" => "parcel#ship", :as => :tracker
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
